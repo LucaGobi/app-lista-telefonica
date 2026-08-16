@@ -1,0 +1,25 @@
+*.iml
+.gradle
+/local.properties
+local.properties
+/.idea
+.idea/
+.DS_Store
+/build
+build/
+/captures
+.externalNativeBuild
+.cxx
+
+# === Credenciais (NUNCA versionar) ===
+# A chave do Google Maps e pessoal e cobrada por uso.
+# Preencha localmente e NAO comite o valor real.
+*.jks
+*.keystore
+secrets.properties
+api_keys.xml
+
+# === Windows / WSL ===
+*Zone.Identifier*
+Thumbs.db
+desktop.ini
