@@ -40,7 +40,7 @@ As Activities que geram mudanças no banco de dados retornam um código de saíd
 
 ### Delegar as ações ao sistema
 
-As ações de ligar, mandar email e localizar usam Intent's implícitas, ou seja, delegam ao sistema escolher quem vai recebê-las.
+As ações de ligar e mandar email usam Intent's implícitas, ou seja, delegam ao sistema escolher quem vai recebê-las. Contudo a ação de localizar usa uma intent explícita que direciona para uma FragmentActivity que apresenta um mapa e usa as coordenadas fornececidas pelo Geocoder, obtidas a partir do endereço, usando a API do Google Maps, dando controle sobre a operação, apesar de também ser possível usar uma intent implícita com as coordenadas dadas pelo Geocoder como parâmetros, delegando ao sistema escolher quem a receberá.
 
 ---
 
@@ -64,7 +64,7 @@ As ações de ligar, mandar email e localizar usam Intent's implícitas, ou seja
 ### Instalação
 
 ```bash
-git clone https://github.com/SEU-USUARIO/app-lista-telefonica.git
+git clone https://github.com/LucaGobi/app-lista-telefonica.git
 ```
 
 Abra a pasta no Android Studio e aguarde a sincronização do Gradle.
